@@ -55,5 +55,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script/script2.js"></script>
+    <script>
+  // Si NO está logueado → fuera
+  if (localStorage.getItem("logueado") !== "true") {
+    window.location.href = "index.html";
+  }
+</script>
 </body>
 </html>
